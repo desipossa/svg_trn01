@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://desipossa.github.io/html_basic_/svg/svg11.html 참고 -->
+    <svg width="100%" viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <mask id="photo-mask">
+                <path
+                    d="M1000 0C766.99 140.963 220.874 122.656 0 75.0581V254.465C143.689 339.409 849.515 294.74 1000 208.698V0Z"
+                    fill="white" />
+            </mask>
+        </defs>
+        <image mask="url(#photo-mask)" xlink:href="./images/bg08.jpg" width="100%" />
+    </svg>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 500px;
+            background: #ddd;
+        }
+
+        #main_movie {
+            padding: 200px;
+        }
+
+        #main_movie svg {
+            width: 100%;
+            transition: 0.5s;
+        }
+
+
+        #main_movie:hover svg {
+            transform: scale(1.2);
+        }
+
+        #main_movie path {
+            fill: #fff;
+            transform: scale(0.9);
+            opacity: 1;
+            animation: svgani 4.5s infinite
+        }
+
+        #main_movie path:nth-child(2) {
+            transform: scale(1);
+            opacity: 0.5;
+        }
+
+        @keyframes svgani {
+            0% {
+                d: path("M300 150C300 232.843 232.843 300 150 300C67.1573 300 0 232.843 0 150C0 67.1573 67.1573 0 150 0C180.592 131.743 300 67.1573 300 150Z");
+            }
+
+            50% {
+                d: path("M300 159.184C300 236.954 232.843 300 150 300C67.1573 300 0 236.954 0 159.184C0 81.413 67.1573 0 150 0C232.843 0 300 81.413 300 159.184Z");
+            }
+
+            100% {
+                d: path("M300 150C300 232.843 232.843 300 150 300C67.1573 300 0 232.843 0 150C0 67.1573 67.1573 0 150 0C180.592 131.743 300 67.1573 300 150Z");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main_movie">
+        <svg width="100%" viewBox="0 0 334 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <mask id="photo-mask">
+                    <path d></path>
+                    <path d></path>
+                </mask>
+            </defs>
+            <image mask="url(#photo-mask)" xlink:href="./images/bg07.jpg" width="150%" />
+        </svg>
+    </section>
+</body>
+
+</html>
